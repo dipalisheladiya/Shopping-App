@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_colour"
+    android:orientation="vertical"
+    tools:context=".LoremIpsumActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center_horizontal"
+        android:text="Lorem ipsum"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:elevation="@dimen/_20sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:background="@drawable/round_bg_edt_txt"
+                android:hint="E-mail"
+                android:inputType="text"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:textColorHint="@color/black" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/round_bg_edt_txt"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingHorizontal="@dimen/_20sdp"
+                android:paddingVertical="@dimen/_10sdp"
+                android:textColorHint="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/cbRemember"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remember"
+                    android:buttonTint="@color/yellow"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginVertical="@dimen/_20sdp"
+                    android:layout_marginHorizontal="@dimen/_20sdp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginVertical="@dimen/_20sdp"
+                    android:textColor="@color/black"
+                    android:text="Forgot Password?"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLorem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/round_corner_bg_btn"
+        android:paddingHorizontal="@dimen/_30sdp"
+        android:text="Lorem ipsum"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_50sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor?"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_50sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+           android:layout_marginTop="@dimen/_50sdp"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="Sit amet lorem"/>
+
+    </LinearLayout>
+
+</LinearLayout>
